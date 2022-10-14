@@ -1,4 +1,4 @@
-# amazonlike_commerce_app
+# Amazon-Like E-commerce App
 
 A new Flutter project.
 
