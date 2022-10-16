@@ -1,4 +1,4 @@
-import 'package:amazonlike_commerce_app/constant/globalVariables.dart';
+import 'package:amazonlike_commerce_app/base_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,24 +8,19 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Amazon Ecommerce App',
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: GlobalVariables.backgroundColor,
-        primarySwatch: Colors.deepOrange,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("This is my fist app after a long time"),
-        ),
-        body: const Center(
-          child: Text("Deneme"),
+        primarySwatch: Colors.teal,
+        appBarTheme: AppBarTheme(
+          foregroundColor: Colors.tealAccent[300],
+          scrolledUnderElevation: 1.0,
         ),
       ),
+      debugShowCheckedModeBanner: false,
+      title: "Flutter Demo 1",
+      home: const BasePage(),
     );
   }
 }
